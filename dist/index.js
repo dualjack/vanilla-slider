@@ -1,4 +1,4 @@
-export const desktopDragScroll = (element, options) => {
+const desktopDragScroll = (element, options) => {
     let mouseDragStartX = 0;
     let mouseDragScrollStart = 0;
     let mouseDragIsDown = false;

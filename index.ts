@@ -1,6 +1,6 @@
 type Options = {}
 
-export const desktopDragScroll = (element: HTMLElement, options?: Options) => {
+const desktopDragScroll = (element: HTMLElement, options?: Options) => {
 
     let mouseDragStartX = 0;
     let mouseDragScrollStart = 0;

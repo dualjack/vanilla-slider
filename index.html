@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vanilla slider dev</title>
+    <script src="dist/index.js"></script>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            all: unset;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        .app {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .slider {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            overflow-x: scroll;
+            scrollbar-width: none;
+        }
+
+        .slider-item {
+            width: 25%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            border: 1px solid black;
+            background: #e9f1fa;
+            user-select: none;
+        }
+
+        .slider-item + .slider-item {
+            border-left: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="app">
+        <div class="container">
+
+            <div class="slider" id="slider-1">
+                <div class="slider-item">1</div>
+                <div class="slider-item">2</div>
+                <div class="slider-item">3</div>
+                <div class="slider-item">4</div>
+                <div class="slider-item">5</div>
+                <div class="slider-item">6</div>
+                <div class="slider-item">7</div>
+                <div class="slider-item">8</div>
+                <div class="slider-item">9</div>
+            </div>
+
+            <script>
+                desktopDragScroll(document.getElementById('slider-1'));
+            </script>
+
+        </div>
+    </div>
+
+</body>
+</html>
