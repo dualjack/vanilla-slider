@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "skipLibCheck": true,
+        "allowJs": true,
+        "strict": false,
+        "downlevelIteration": true,
+        "outDir": "dist"
+    }
+}

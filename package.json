@@ -1,0 +1,13 @@
+{
+    "name": "vanilla-slider",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "author": "jakubkuranda@gmail.com",
+    "devDependencies": {
+        "typescript": "^5.7.3"
+    }
+}
